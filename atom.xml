@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>资深闲鱼</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-11-29T10:49:44.452Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>闲鱼</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开篇</title>
+    <link href="http://example.com/2020/11/29/%E5%BC%80%E7%AF%87/"/>
+    <id>http://example.com/2020/11/29/%E5%BC%80%E7%AF%87/</id>
+    <published>2020-11-29T09:20:51.000Z</published>
+    <updated>2020-11-29T10:49:44.452Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​    2020年11月29日，搞了一整天，终于把这个博客系统给弄出来了，其目的是为了让自己养成每日日记，每日笔记的习惯。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="杂谈" scheme="http://example.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
+  
+</feed>
