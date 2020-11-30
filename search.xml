@@ -79,6 +79,8 @@
     <url>/2020/11/30/%E8%AE%B0%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%BB%E4%BB%8E%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p><strong>问题背景</strong></p>
 <p>&nbsp;&nbsp;&nbsp;有一个基础组件，是每秒钟多少次从类似zookeeper这种配置平台去获取对应的配置信息，获取后保存在本地缓存，下次获取时又从平台上获取对应的配置信息，然后重新在本地生成一份配置对象。原先的配置对象进入历史数据。</p>
+<a id="more"></a>
+
 <p><strong>问题触发</strong></p>
 <p>&nbsp;&nbsp;&nbsp;首先通过接口从平台获取对应的配置信息，在原本的配置对象上更改信息，更改后再调用对应的接口用该配置对象更改平台的配置信息。问题来了，当连续更改配置信息时，比如说，平台上的配置版本为<code>v1</code>，我更改一次后平台的配置版本为<code>v2</code>，我再调用更新接口后平台的配置版本为<code>v3</code>，这时偶尔会出现中间版本被覆盖的问题，也就是说<code>v3</code>修改后，平台上的配置信息是在<code>v1</code>版本的基础上做的修改，而<code>v2</code>版本的修改信息就丢失了。而平台的配置更新接口，有个监听配置版本变化的<code>listener</code>，这时的<code>listener</code>的<code>cur</code>和<code>prev</code>的值被调换。</p>
 <p><strong>问题分析</strong></p>
@@ -92,7 +94,7 @@
       <tags>
         <tag>技术</tag>
         <tag>java</tag>
-        <tag>随机</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
 </search>
