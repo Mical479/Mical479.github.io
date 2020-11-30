@@ -17,7 +17,7 @@
   </entry>
   <entry>
     <title>今日检讨</title>
-    <url>/2020/11/29/2020-11-29/</url>
+    <url>/2020/11/29/20201129-%E8%87%AA%E6%A3%80/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>少年之所以是少年，他们看春风不喜，看夏蝉不烦，看秋雨不悲，看冬雪不叹，看满身富贵懒察觉，看不公不正感面对，这就是少年。</p>
@@ -44,6 +44,55 @@
       <tags>
         <tag>随想</tag>
         <tag>自检</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>今日检讨</title>
+    <url>/2020/11/30/20201130-%E8%87%AA%E6%A3%80/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>人生是一首诗，当我们拥有它的时候，往往并没有读懂它；而当我们能够读懂它的时候，他却早已远去。这首诗的名字，就叫青春。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<a id="more"></a>
+
+<p>周一，琐事较多。不便废话，今日份检讨如下：</p>
+<ul>
+<li>上午时，代码没看直接找勇哥问问题，我是傻逼不是？？解决问题时不会思考，张嘴就来，总想捡现成的，我真是头猪。</li>
+<li>没有给自己一个做事的规划，浪费了很多时间在毫无意义的事情上。要怎样才能提前给自己规划好呢？？？这是个值得深思的问题</li>
+<li>写代码前没有仔细思考，导致写代码的途中浪费了大量的时间去反反复复修改代码。我真的不配当一个程序员。。</li>
+<li>总感觉自己很忙，但总感觉自己没做到啥具体的东西？？这个要咋整？？谁来拯救拯救我。。。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>三省吾身</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+        <tag>自检</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记分布式主从读取数据问题</title>
+    <url>/2020/11/30/%E8%AE%B0%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%BB%E4%BB%8E%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><strong>问题背景</strong></p>
+<p>&nbsp;&nbsp;&nbsp;有一个基础组件，是每秒钟多少次从类似zookeeper这种配置平台去获取对应的配置信息，获取后保存在本地缓存，下次获取时又从平台上获取对应的配置信息，然后重新在本地生成一份配置对象。原先的配置对象进入历史数据。</p>
+<p><strong>问题触发</strong></p>
+<p>&nbsp;&nbsp;&nbsp;首先通过接口从平台获取对应的配置信息，在原本的配置对象上更改信息，更改后再调用对应的接口用该配置对象更改平台的配置信息。问题来了，当连续更改配置信息时，比如说，平台上的配置版本为<code>v1</code>，我更改一次后平台的配置版本为<code>v2</code>，我再调用更新接口后平台的配置版本为<code>v3</code>，这时偶尔会出现中间版本被覆盖的问题，也就是说<code>v3</code>修改后，平台上的配置信息是在<code>v1</code>版本的基础上做的修改，而<code>v2</code>版本的修改信息就丢失了。而平台的配置更新接口，有个监听配置版本变化的<code>listener</code>，这时的<code>listener</code>的<code>cur</code>和<code>prev</code>的值被调换。</p>
+<p><strong>问题分析</strong></p>
+<p>&nbsp;&nbsp;&nbsp;之所以会出现这种情况，是因为当我们调用接口获取平台的配置信息后，在本地有一份缓存，我直接修改了本地缓存的数据再更新到平台，那么它下一次获取到配置变更时，之前的缓存数据实际上是最新的版本，所以大多数情况下<code>cur</code>和<code>prev</code>这两个值是相同的。但是，当我第一次更新完后，平台的所有主从几点没有来得及同步该更新，我第二次获取值时，本地的基础组件又一次从没有更新的从节点获取了未更新的配置信息，这时候之前的最新的本地缓存会被保存在<code>prev</code>这个变量中，而新获取的配置信息则保存在了<code>cur</code>变量中，从而导致了这两个变量被替换。而配置修改被替换，则是因为<code>v1</code>被修改为<code>v2</code>后，本地的缓存其实已经是最新的<code>v2</code>了，这时候如果基础组件正好从平台的从节点去获取到没有被更新的配置信息<code>v1</code>放入缓存，我又恰好再次调用了更新接口，就相当于再次在<code>v1</code>的基础上进行了更新，从而导致<code>v2</code>修改的信息被覆盖。</p>
+<p><strong>解决方法</strong></p>
+<p>&nbsp;&nbsp;&nbsp;在本地深拷贝一份缓存<code>extra</code>永久保存，当更新时首先调用接口获取平台的数据后，再把对应的数据深拷贝一份出来，在拷贝的配置信息上进行修改，修改后再进行更新。这样相当于本地的缓存和平台保持一致，我本地没有更新这份缓存。而我调用接口更新完成后，再操作本地的缓存<code>extra</code>进行更新。当下次继续调用时，首先判断从平台获取的缓存的配置信息是否和<code>extra</code>的缓存信息一致，不一致就返回不能修改，一致后才进行更新。</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>java</tag>
+        <tag>随机</tag>
       </tags>
   </entry>
 </search>
