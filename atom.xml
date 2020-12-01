@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-01T15:44:01.231Z</updated>
+  <updated>2020-12-01T15:44:52.993Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,18 +21,15 @@
     <link href="http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/"/>
     <id>http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/</id>
     <published>2020-12-01T15:20:41.000Z</published>
-    <updated>2020-12-01T15:44:01.231Z</updated>
+    <updated>2020-12-01T15:44:52.993Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
             &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-           </summary>
-        
-      
+            &lt;p&gt;生命并没有什么意义，但剧场活着的话就可能会遇见有意思的事，就像你遇见了那朵花，就像我遇见了你。当然，我啥也没遇见。&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
     
     
     
