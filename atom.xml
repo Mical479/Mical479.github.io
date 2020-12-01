@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-30T15:50:33.596Z</updated>
+  <updated>2020-12-01T15:44:01.231Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>生活呀，我想要放肆</title>
+    <link href="http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/"/>
+    <id>http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/</id>
+    <published>2020-12-01T15:20:41.000Z</published>
+    <updated>2020-12-01T15:44:01.231Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+           </summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="http://example.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>记分布式主从读取数据问题</title>
