@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-01T15:44:52.993Z</updated>
+  <updated>2020-12-02T16:17:17.668Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,16 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>生活呀，我想要放肆</title>
-    <link href="http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/"/>
-    <id>http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/</id>
-    <published>2020-12-01T15:20:41.000Z</published>
-    <updated>2020-12-01T15:44:52.993Z</updated>
+    <title>这是一遍随笔</title>
+    <link href="http://example.com/2020/12/02/20201202-%E9%9A%8F%E7%AC%94/"/>
+    <id>http://example.com/2020/12/02/20201202-%E9%9A%8F%E7%AC%94/</id>
+    <published>2020-12-02T15:28:25.000Z</published>
+    <updated>2020-12-02T16:17:17.668Z</updated>
     
     
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
             &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;生命并没有什么意义，但剧场活着的话就可能会遇见有意思的事，就像你遇见了那朵花，就像我遇见了你。当然，我啥也没遇见。&lt;/p&gt;
+            &lt;p&gt;人生就像一杯茶，不会苦一辈子，但总会苦一阵子。&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="三省吾身" scheme="http://example.com/categories/%E4%B8%89%E7%9C%81%E5%90%BE%E8%BA%AB/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+    <category term="自检" scheme="http://example.com/tags/%E8%87%AA%E6%A3%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生活呀，我想要放肆</title>
+    <link href="http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/"/>
+    <id>http://example.com/2020/12/01/%E7%94%9F%E6%B4%BB%E5%91%80/</id>
+    <published>2020-12-01T15:20:41.000Z</published>
+    <updated>2020-12-01T15:46:36.441Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;生命并没有什么意义，但是活着的话就可能会遇见有意思的事，就像你遇见了那朵花，就像我遇见了你。当然，我啥也没遇见。&lt;/p&gt;
 
             &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
           &lt;/blockquote&gt;</summary>
