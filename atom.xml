@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-02T16:17:17.668Z</updated>
+  <updated>2020-12-05T15:31:41.647Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,16 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>这是一遍随笔</title>
-    <link href="http://example.com/2020/12/02/20201202-%E9%9A%8F%E7%AC%94/"/>
-    <id>http://example.com/2020/12/02/20201202-%E9%9A%8F%E7%AC%94/</id>
-    <published>2020-12-02T15:28:25.000Z</published>
-    <updated>2020-12-02T16:17:17.668Z</updated>
+    <title>20201205-自检</title>
+    <link href="http://example.com/2020/12/05/20201205-%E8%87%AA%E6%A3%80/"/>
+    <id>http://example.com/2020/12/05/20201205-%E8%87%AA%E6%A3%80/</id>
+    <published>2020-12-05T14:49:58.000Z</published>
+    <updated>2020-12-05T15:31:41.647Z</updated>
     
     
-    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/20201205-%E8%87%AA%E6%A3%80/WechatIMG10.png&quot; alt=&quot;WechatIMG10&quot;&gt;&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
             &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;人生就像一杯茶，不会苦一辈子，但总会苦一阵子。&lt;/p&gt;
+            &lt;p&gt;一个人至少拥有一个梦想，有一个理由去坚强。心若没有栖息的地方，到哪里都是在流浪。&lt;/p&gt;
 
             &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
           &lt;/blockquote&gt;</summary>
@@ -39,6 +40,30 @@
     <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
     
     <category term="自检" scheme="http://example.com/tags/%E8%87%AA%E6%A3%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是一遍随笔</title>
+    <link href="http://example.com/2020/12/02/20201202-%E9%9A%8F%E7%AC%94/"/>
+    <id>http://example.com/2020/12/02/20201202-%E9%9A%8F%E7%AC%94/</id>
+    <published>2020-12-02T15:28:25.000Z</published>
+    <updated>2020-12-05T15:34:17.110Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;人生就像一杯茶，不会苦一辈子，但总会苦一阵子。&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="杂谈" scheme="http://example.com/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
@@ -95,12 +120,36 @@
     <link href="http://example.com/2020/11/30/20201130-%E8%87%AA%E6%A3%80/"/>
     <id>http://example.com/2020/11/30/20201130-%E8%87%AA%E6%A3%80/</id>
     <published>2020-11-30T15:04:45.000Z</published>
-    <updated>2020-11-30T15:13:56.906Z</updated>
+    <updated>2020-12-05T15:33:56.420Z</updated>
     
     
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
             &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
             &lt;p&gt;人生是一首诗，当我们拥有它的时候，往往并没有读懂它；而当我们能够读懂它的时候，他却早已远去。这首诗的名字，就叫青春。&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="三省吾身" scheme="http://example.com/categories/%E4%B8%89%E7%9C%81%E5%90%BE%E8%BA%AB/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今日检讨</title>
+    <link href="http://example.com/2020/11/29/20201129-%E8%87%AA%E6%A3%80/"/>
+    <id>http://example.com/2020/11/29/20201129-%E8%87%AA%E6%A3%80/</id>
+    <published>2020-11-29T09:20:51.000Z</published>
+    <updated>2020-11-30T15:04:13.683Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;少年之所以是少年，他们看春风不喜，看夏蝉不烦，看秋雨不悲，看冬雪不叹，看满身富贵懒察觉，看不公不正感面对，这就是少年。&lt;/p&gt;
 
             &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
           &lt;/blockquote&gt;</summary>
@@ -132,32 +181,6 @@
     
     
     <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>今日检讨</title>
-    <link href="http://example.com/2020/11/29/20201129-%E8%87%AA%E6%A3%80/"/>
-    <id>http://example.com/2020/11/29/20201129-%E8%87%AA%E6%A3%80/</id>
-    <published>2020-11-29T09:20:51.000Z</published>
-    <updated>2020-11-30T15:04:13.683Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
-            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
-            &lt;p&gt;少年之所以是少年，他们看春风不喜，看夏蝉不烦，看秋雨不悲，看冬雪不叹，看满身富贵懒察觉，看不公不正感面对，这就是少年。&lt;/p&gt;
-
-            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
-          &lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="三省吾身" scheme="http://example.com/categories/%E4%B8%89%E7%9C%81%E5%90%BE%E8%BA%AB/"/>
-    
-    
-    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
-    
-    <category term="自检" scheme="http://example.com/tags/%E8%87%AA%E6%A3%80/"/>
     
   </entry>
   
