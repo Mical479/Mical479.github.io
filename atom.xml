@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-05T15:31:41.647Z</updated>
+  <updated>2020-12-08T16:11:43.919Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>20201205-自检</title>
+    <title>今日检讨</title>
+    <link href="http://example.com/2020/12/08/20201208-%E8%87%AA%E6%A3%80/"/>
+    <id>http://example.com/2020/12/08/20201208-%E8%87%AA%E6%A3%80/</id>
+    <published>2020-12-08T15:48:06.000Z</published>
+    <updated>2020-12-08T16:11:43.919Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;我们最终都要远行，最终都要跟稚嫩的自己告别。也许路途有点艰辛，有点孤独，但熬过了痛苦，我们才能得以成长。&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="三省吾身" scheme="http://example.com/categories/%E4%B8%89%E7%9C%81%E5%90%BE%E8%BA%AB/"/>
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+    <category term="自检" scheme="http://example.com/tags/%E8%87%AA%E6%A3%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>今日检讨</title>
     <link href="http://example.com/2020/12/05/20201205-%E8%87%AA%E6%A3%80/"/>
     <id>http://example.com/2020/12/05/20201205-%E8%87%AA%E6%A3%80/</id>
     <published>2020-12-05T14:49:58.000Z</published>
-    <updated>2020-12-05T15:31:41.647Z</updated>
+    <updated>2020-12-05T15:39:38.823Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/20201205-%E8%87%AA%E6%A3%80/WechatIMG10.png&quot; alt=&quot;WechatIMG10&quot;&gt;&lt;/p&gt;
